@@ -1,0 +1,15 @@
+{
+  "apps" : [{
+    "name"       : "tumblr-telegram-bot",
+    "script"     : "index.js",
+    "max_restarts": 3,
+    "log_date_format"  : "YYYY-MM-DD HH:mm Z",
+    "error_file" : "./err.log"
+  }],
+  "dependencies": {
+    "jsonfile": "^2.2.3",
+    "node-telegram-bot-api": "^0.21.1",
+    "request": "^2.69.0",
+    "tumblrwks": "^0.3.0"
+  }
+}

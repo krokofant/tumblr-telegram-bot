@@ -1,0 +1,12 @@
+{
+    "updated": 1458755420,
+    "telegram": {
+        "token": "012345678:ABCDEF",
+        "chatId": 123
+    },
+    "tumblr": {
+        "site": "tumblrfanboy.com",
+        "limit": 7,
+        "consumerKey": "CONSUMER_KEY"
+    }
+}
