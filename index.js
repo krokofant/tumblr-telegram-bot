@@ -64,12 +64,13 @@ run = function run() {
             return Math.max( prevValue, currentPost.timestamp );
         }, settings.updated );
 
+        // Save the latest timestamp (& settings) to file
+        saveSettings( settings );
+
         return Promise.all( promises );
     })
     .then(function( messages ) {
         if ( messages.length > 0 ) {
-            // Save the latest timestamp (& settings) to file
-            saveSettings( settings );
 
             console.log("Sent all " + messages.length + " posts to Telegram");
         } else {
